@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="../css/format.css">
+    <script defer src="//unpkg.com/mathlive"></script>
+    <script src="//unpkg.com/@cortex-js/compute-engine"></script>
+
+</head>
+<body class="light-theme">
+    <div class="outer-grid">
+        <div class="grid-container">
+            <div class="grid-item">
+                <label>Mathfield</label>
+                <math-field class="math outputZone" id="formula">
+                    x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}
+                </math-field>
+            </div>
+            <div class="grid-item">
+                <label>Latex</label>
+                <textarea class="latex outputZone" id="latex" autocapitalize="off" autocomplete="off"
+                    autocorrect="off" spellcheck="false"></textarea>
+            </div>
+            <div class="grid-item">
+                <label>Math JSON</label>
+                <textarea class="mjson outputZone" id="mjson" autocapitalize="off" autocomplete="off"
+                    autocorrect="off" spellcheck="false"></textarea>
+            </div>
+            <div class="grid-item">
+                <label>Custom JSON</label>
+                <textarea class="cjson outputZone" id="cjson" autocapitalize="off" autocomplete="off"
+                    autocorrect="off" spellcheck="false"></textarea>
+            </div>
+        </div>
+        <div class="variable-area">
+            <label>Variables:</label>
+        </div>
+    </div>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

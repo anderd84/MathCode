@@ -1,0 +1,51 @@
+:root {
+    --eng_green: #dfddaa;
+}
+
+body {
+    background-color: var(--eng_green);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.outer-grid {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.outputZone {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: var(--eng_green);
+}
+
+math-field {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: var(--eng_green);
+}
